@@ -17,15 +17,9 @@
 # under the License.
 from __future__ import annotations
 
-import sys
-
-import pytest
-
-pytestmark = pytest.mark.skipif(sys.version_info >= (3, 11), reason="Skipped on python3.11 or higher")
-
-
 from unittest import mock
 
+import pytest
 from google.api_core.gapic_v1.method import DEFAULT
 from google.cloud.vision_v1 import (
     AnnotateImageRequest,

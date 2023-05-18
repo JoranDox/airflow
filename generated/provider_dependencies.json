@@ -784,8 +784,6 @@
     "deps": [
       "apache-airflow-providers-common-sql>=1.3.1",
       "apache-airflow>=2.4.0",
-      "pyarrow>=11.0.0;python_version>=\"3.11\"",
-      "pyarrow>=9.0.0;python_version<\"3.11\"",
       "snowflake-connector-python>=2.4.1",
       "snowflake-sqlalchemy>=1.1.0"
     ],
@@ -793,9 +791,7 @@
       "common.sql",
       "slack"
     ],
-    "excluded-python-versions": [
-      "3.11"
-    ]
+    "excluded-python-versions": []
   },
   "sqlite": {
     "deps": [

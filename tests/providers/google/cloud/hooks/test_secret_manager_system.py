@@ -16,13 +16,9 @@
 # under the License.
 from __future__ import annotations
 
-import sys
+import os
 
 import pytest
-
-pytestmark = pytest.mark.skipif(sys.version_info >= (3, 11), reason="Skipped on python3.11 or higher")
-
-import os
 
 from airflow.providers.google.cloud.hooks.secret_manager import SecretsManagerHook
 from tests.providers.google.cloud.utils.gcp_authenticator import GCP_SECRET_MANAGER_KEY
